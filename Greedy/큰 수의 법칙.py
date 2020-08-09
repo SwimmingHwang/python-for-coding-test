@@ -16,3 +16,24 @@ m2 = a[1]
 
 res = (m // k * k * m1) + (m % k * m2)
 print(res)
+
+"""
+답안
+"""
+n, m, k = map(int, input().split())
+a = list(map(int, input().split()))
+print(a)
+# sorted list
+a.sort(reverse=True)
+print(a)
+m1 = a[0]
+m2 = a[1]
+
+# 가장 큰 수가 더해지는 횟수 계산
+count = int(m / (k + 1)) * m1
+count += m % (k + 1)
+
+res = 0
+res += count * m1
+res += (m - count) * m2
+print(res)
