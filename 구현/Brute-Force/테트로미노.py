@@ -11,6 +11,16 @@ https://www.acmicpc.net/problem/14500
 - 기본 블럭 입력하고 rotate, 대칭 함수 만들어서 해결할 수 있을 것 같음
 - 2차원 arr input 한 줄로 줄임, 리스트 컴프리헨션 활용해셔
 
+input
+5 5
+1 2 3 4 5
+5 4 3 2 1
+2 3 4 5 6
+6 5 4 3 2
+1 2 1 2 1
+outut
+19
+
 '''
 
 n, m = map(int, input().split())
