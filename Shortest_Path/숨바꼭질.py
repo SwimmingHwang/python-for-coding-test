@@ -49,7 +49,6 @@ print(distance.index(maxDistance)+1, maxDistance, distance.count(maxDistance))
 # 다익스트라 알고리즘이 최단 경로 알고리즘이며, 1 넣으면 1에서의 최단 경로를  할 수 있는데..
 # 이에 대한 이해가 부족함을 깨닳았다
 # 양방향으로 넣어줘야 했다
-# 문법
-# 새로운 문법
-# - 리스트에서 최대값의 index를 구하려면 list.index를 이용하면 된다
-# - 리스트에서 원소의 갯수 구하려면 list.count(elem)
+
+
+# TODO : BFS로 depth 저장해 가면서 풀 수 있음
