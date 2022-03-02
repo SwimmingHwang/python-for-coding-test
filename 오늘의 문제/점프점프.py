@@ -51,7 +51,17 @@ A[1] = a, A[2] = b
 자기까지의 최소 점프수 값 (dp[a]) +1 과 이미 a+1, a+2, a+3 지점의 값 중 더 작은 값으로 dp 테이블 초기화 해 준다.
 
 - 다른 풀이 :
-  d[j] = d[i] + 1
+  - dp i값을 채워주는데, i 본인 자리로 부터 i-1, i-2, ..범위에 해당하면 dp[j](j까지의 최소 점프수) + 1 로 세팅
+  
+maze = list(map(int, input().split()))
+dp = [-1] * (n)
+dp[0] = 0
+
+for i in range(1, n):
+    for j in range(0, i):
+        if dp[j] != -1 and i-j <= maze[j]:
+            if dp[i] == -1 or dp[i] > dp[j]+1:
+                dp[i] = dp[j] + 1
 '''
 
 n = int(input())
