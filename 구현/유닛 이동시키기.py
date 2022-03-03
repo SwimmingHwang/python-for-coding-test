@@ -18,7 +18,6 @@ end_x, end_y = map(int, input().split())
 
 
 # BFS
-
 step = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 cur_x, cur_y = start_x-1, start_y-1
 
